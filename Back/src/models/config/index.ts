@@ -1,41 +1,21 @@
 import { Sequelize } from 'sequelize';
-import { initCustomerModel } from '../Customer.model';
-import { initSaleModel } from '../Sale.model';
+import { initAccessorModel } from '../Accessor.model';
+import { initCategoryModel } from '../Category.model';
+import { initCategoryListModel } from '../CategoryList.model';
+import { initMovieModel } from '../Movie.model';
+import { initMyListModel } from '../MyList.model';
+import { initRoleModel } from '../Role.model';
 import { initUserModel } from '../User.model';
-import { initCity } from '../city.model';
-import { initClientAddressModel } from '../ClientAddress.model';
-import { initRestaurantModel } from '../Accessor.model';
-import { initBillingDetailsModel } from '../BillingDetails.model';
-import { initItemModel } from '../Item.model';
-import { initPaymentMethodModel } from '../PaymentMethod.model';
-import { initOrderModel } from '../Order.model';
-import { initOpeningDaysModel } from "../OpeningDays.model";
-import { initCourierModel } from '../Courier.model';
-import { initOrderItemsModel } from "../OrderItems.model";
-import { initRoleModel } from "../Role.model";
-import { initOwnerModel } from "../Owner.model";
-import { initManager } from '../Manager.Model';
-import { initOrderStatus } from '../OrderStatus.Model';
 
 export let sequelize: Sequelize;
 const models = [
-  initCity,
+  initAccessorModel,
+  initCategoryModel,
+  initCategoryListModel,
+  initMovieModel,
+  initMyListModel,
   initRoleModel,
-  initUserModel,
-  initOwnerModel,
-  initCustomerModel,
-  initCourierModel,
-  initRestaurantModel,
-  initManager,
-  initOpeningDaysModel,
-  initItemModel,
-  initOrderStatus,
-  initOrderModel,
-  initOrderItemsModel,
-  initClientAddressModel,
-  initBillingDetailsModel,
-  initPaymentMethodModel,
-  initSaleModel
+  initUserModel
 ];
 
 export const startSequelize = (

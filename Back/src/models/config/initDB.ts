@@ -1,20 +1,10 @@
-import { Customer } from '../Customer.model';
-import { Sale } from '../Sale.model';
-import { User, Role as Roletype } from '../User.model';
-import { City } from '../city.model';
-import { ClientAddress } from '../ClientAddress.model';
-import { Restaurant } from '../Accessor.model';
-import { BillingDetails } from '../BillingDetails.model';
-import { Item } from '../Item.model';
-import { PaymentMethod } from '../PaymentMethod.model';
-import { Order } from '../Order.model';
-import { OpeningDays } from "../OpeningDays.model";
-import { Courier } from '../Courier.model';
-import { OrderItems } from "../OrderItems.model";
-import { Role } from "../Role.model";
-import { Owner } from "../Owner.model";
-import { OrderStatus } from '../OrderStatus.Model';
-import { Manager } from '../Manager.Model';
+import { Accessor } from "../Accessor.model";
+import { Category } from "../Category.model";
+import { CategoryList } from "../CategoryList.model";
+import { MyList } from "../MyList.model";
+import { Movie } from "../Movie.model";
+import { Role } from "../User.model";
+import { User } from "../User.model";
 
 export const initDb = () => {
 
